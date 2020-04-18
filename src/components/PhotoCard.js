@@ -12,8 +12,6 @@ align-items: center;'
 `;
 
 const  PhotoTitle = styled.div`
-display: flex;
-justify-content: space-between;
 color: white;
 `;
 
@@ -40,8 +38,8 @@ const PhotoCard = ({image}) => {
     return(
         <CardWrapper>
         <CardBody>
-          <CardTitle>{image.title}</CardTitle>
-          <CardSubtitle>{image.date}</CardSubtitle>
+          <PhotoTitle>{image.title}</PhotoTitle>
+          <PhotoTitle>{image.date}</PhotoTitle>
         </CardBody>
         <AstroImg width="55%" src={image.url} alt="Nasa's astronomy photo of the day." />
         <InfoWrapper>
